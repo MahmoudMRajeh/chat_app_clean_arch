@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424676530023",
+    "project_id": "chat-app-with-clean-arch",
+    "storage_bucket": "chat-app-with-clean-arch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424676530023:android:a9926bafdb3fa03ba681c2",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFuahkgx4KbOVuG2fWlp2a6Ca0pEbn6LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

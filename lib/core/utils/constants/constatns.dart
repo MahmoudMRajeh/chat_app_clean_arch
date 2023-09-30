@@ -1,0 +1,1 @@
+enum MsgDiriction { left, right }
