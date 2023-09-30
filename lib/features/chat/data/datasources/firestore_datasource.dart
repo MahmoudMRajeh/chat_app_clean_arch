@@ -25,9 +25,9 @@ class FireStoreDataSourceImpl extends FireStoreDataSource {
     List<UserModel> users = [];
     final response = await firestore.collection("users").get();
     for (var x in response.docs) {
-      if (x.data()["id"] != myUID) {
+      //if (x.data()["id"] != myUID) {
         users.add(UserModel.fromJson(json: x.data()));
-      }
+      //}
     }
     return users;
   }

@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:js';
 
 import 'package:chat/features/authentication/domain/entities/user_entity.dart';
 import 'package:chat/features/authentication/presentation/cubit/authentication_cubit.dart';
@@ -35,7 +34,6 @@ class ChatCubit extends Cubit<ChatState> {
     emit(GetAllUsersLoading());
     final response = await getAllUsersUseCase.call(myUID: myUID);
     response.fold((l) => emit(GetAllUsersFailure(l.errMsg)), (r) {
-      users = r;
       for(var x in r){
         if(x.id!=myUID){
           users.add(x);

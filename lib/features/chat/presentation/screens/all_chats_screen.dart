@@ -22,7 +22,7 @@ class AllChatsScreen extends StatelessWidget {
               String name;
               if (chat.recipientUID == AuthenticationCubit.get(context).id) {
                 id = chat.senderUID!;
-                name = chat.senderName!;
+                name = ChatCubit.get(context).user!.name;
               } else {
                 id = chat.recipientUID!;
                 name = chat.recipientName!;
